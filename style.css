@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* Variables */
+:root {
+  --FF: "Outfit", sans-serif;
+  --WHITE: hsl(0, 0%, 100%);
+  --LIGHTGRAY: hsl(212, 45%, 89%);
+  --BLUE: hsl(220, 15%, 55%);
+  --DARKBLUE: hsl(218, 44%, 22%);
+  --FONTSIZE: 15px;
+  --SHADOW: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Reset  */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Generals */
+body {
+  font: var(--FONTSIZE) var(--FF);
+  min-height: 100vh;
+  background-color: var(--LIGHTGRAY);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.25rem;
+}
+
+/* Features */
+.container {
+  padding: 1.25rem;
+  border: 0.625rem;
+  box-shadow: var(--SHADOW);
+  border-radius: 0.75rem;
+  background-color: var(--WHITE);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container figcaption {
+  position: absolute;
+  left: -1000px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-title {
+  text-align: center;
+
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  text-align: center;
+
+  margin-bottom: 1rem;
+}
+
+.card-qr {
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+.card-qr img {
+  border-radius: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  min-width: 100vw;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media screen and (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .attribution {
+    position: static;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+}
